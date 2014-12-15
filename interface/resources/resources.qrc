@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations.qm</file>
+        <file>icon.png</file>
+        <file>add.png</file>
+        <file>back.png</file>
+        <file>chart.png</file>
+        <file>comment.png</file>
+        <file>connection.png</file>
+        <file>delete.png</file>
+        <file>email.png</file>
+        <file>exit.png</file>
+        <file>info.png</file>
+        <file>load.png</file>
+        <file>loading.png</file>
+        <file>modify.png</file>
+        <file>next.png</file>
+        <file>print.png</file>
+        <file>profile.png</file>
+        <file>save.png</file>
+        <file>search.png</file>
+        <file>status.png</file>
+        <file>warning.png</file>
+        <file>maps_screen/c3mp_airport.jpg</file>
+        <file>maps_screen/c3mp_bridge.jpg</file>
+        <file>maps_screen/c3mp_canyon.jpg</file>
+        <file>maps_screen/c3mp_cave.jpg</file>
+        <file>maps_screen/c3mp_con_ed.jpg</file>
+        <file>maps_screen/c3mp_dam.jpg</file>
+        <file>maps_screen/c3mp_fields.jpg</file>
+        <file>maps_screen/c3mp_museum.jpg</file>
+        <file>maps_screen/c3mp_river.jpg</file>
+        <file>maps_screen/c3mp_rooftop_gardens.jpg</file>
+        <file>maps_screen/c3mp_swamp_boat.jpg</file>
+        <file>maps_screen/c3mp_tanker.jpg</file>
+    </qresource>
+</RCC>

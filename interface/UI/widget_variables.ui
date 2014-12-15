@@ -1,0 +1,1957 @@
+<ui version="4.0" >
+ <class>widget_variables</class>
+ <widget class="QWidget" name="widget_variables" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>923</width>
+    <height>877</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Widget_variables</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_12" >
+   <item row="0" column="0" colspan="3" >
+    <widget class="QLabel" name="label_26" >
+     <property name="text" >
+      <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-style:italic;">Changing most of the following variables will result in the match being UNRANKED. Variables in &lt;/span>&lt;span style=" font-size:8pt; font-weight:600; font-style:italic;">bold&lt;/span>&lt;span style=" font-size:8pt; font-style:italic;"> can be safely changed without affecting whether the match is ranked or not.&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+     <property name="wordWrap" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="4" row="1" column="0" >
+    <widget class="QGroupBox" name="groupBox_8" >
+     <property name="title" >
+      <string>Misc</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label" >
+        <property name="toolTip" >
+         <string>Set the winning score limit</string>
+        </property>
+        <property name="text" >
+         <string>g_scoreLimit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_scoreLimit" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_3" >
+        <property name="toolTip" >
+         <string>Minimum number of players to start a match</string>
+        </property>
+        <property name="text" >
+         <string>g_minPlayerLimit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_minplayerlimit" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>16.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_5" >
+        <property name="toolTip" >
+         <string>Set the total number of lives for each player</string>
+        </property>
+        <property name="text" >
+         <string>g_numLives</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_numLives" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_6" >
+        <property name="toolTip" >
+         <string>Set the maximum health of each player</string>
+        </property>
+        <property name="text" >
+         <string>g_maxHealthMultiplier</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_maxHealthMultiplier" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>1</number>
+        </property>
+        <property name="maximum" >
+         <double>99.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_7" >
+        <property name="toolTip" >
+         <string>Set the health regeneration speed</string>
+        </property>
+        <property name="text" >
+         <string>g_mpRegenerationRate</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_mpRegenerationRate" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>2.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QLabel" name="label_8" >
+        <property name="toolTip" >
+         <string>Set the behaviour when damaging teammates</string>
+        </property>
+        <property name="text" >
+         <string>g_friendlyFireRatio</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_friendlyfireratio" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" >
+       <widget class="QLabel" name="label_10" >
+        <property name="toolTip" >
+         <string>Only Headshots cause damage</string>
+        </property>
+        <property name="text" >
+         <string>g_mpHeadshotsOnly</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_mpHeadshotsOnly" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" >
+       <widget class="QLabel" name="label_21" >
+        <property name="toolTip" >
+         <string>Restrict all players to the same weapon type</string>
+        </property>
+        <property name="text" >
+         <string>g_forceWeapon</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_forceWeapon" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>-1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>50.000000000000000</double>
+        </property>
+        <property name="value" >
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" >
+       <widget class="QLabel" name="label_22" >
+        <property name="toolTip" >
+         <string>Automatically assign players to teams when match starts</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">g_autoAssignTeams&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_autoAssignTeams" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QGroupBox" name="groupBox_4" >
+     <property name="title" >
+      <string>Modes</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_16" >
+        <property name="toolTip" >
+         <string>Reduce the amount of information on the HUD</string>
+        </property>
+        <property name="text" >
+         <string>g_modevarivar_proHud</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_modevarivar_proHud" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_17" >
+        <property name="toolTip" >
+         <string>Set whether the nanosuit is active</string>
+        </property>
+        <property name="text" >
+         <string>g_modevarivar_disableNanosuit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_modevarivar_disableNanosuit" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_18" >
+        <property name="toolTip" >
+         <string>Show the replay camera after each death</string>
+        </property>
+        <property name="text" >
+         <string>g_modevarivar_disableKillCam</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_modevarivar_disableKillCam" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_19" >
+        <property name="toolTip" >
+         <string>Spectate on team mates between respawns</string>
+        </property>
+        <property name="text" >
+         <string>g_modevarivar_disableSpectatorCam</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_modevarivar_disableSpectatorCam" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item rowspan="2" row="1" column="2" >
+    <widget class="QGroupBox" name="groupBox_3" >
+     <property name="title" >
+      <string>Options</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_11" >
+        <property name="toolTip" >
+         <string>Allow customized classes to be used</string>
+        </property>
+        <property name="text" >
+         <string>g_allowCustomLoadouts</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_allowCustomLoadouts" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_12" >
+        <property name="toolTip" >
+         <string>Allow nanosuit modules to be used</string>
+        </property>
+        <property name="text" >
+         <string>g_allowSuitPerks</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_allowSuitPerks" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_13" >
+        <property name="toolTip" >
+         <string>Allow bonus awards for collecting dog tags</string>
+        </property>
+        <property name="text" >
+         <string>g_allowTeamPerks</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_allowTeamPerks" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_15" >
+        <property name="toolTip" >
+         <string>Allow bonus awards for players with high death streaks</string>
+        </property>
+        <property name="text" >
+         <string>g_allowFatalityBonus</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_20" >
+        <property name="toolTip" >
+         <string>Allow the use of grenades and other explosive types</string>
+        </property>
+        <property name="text" >
+         <string>g_allowExplosives</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_allowExplosives" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_allowFatalityBonus" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item rowspan="4" row="2" column="1" >
+    <widget class="QGroupBox" name="groupBox_5" >
+     <property name="title" >
+      <string>Times</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_23" >
+        <property name="toolTip" >
+         <string>Time you spend in the lobby before you join the server</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">gl_initialTime&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="gl_initialTime" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_24" >
+        <property name="toolTip" >
+         <string>Time you spend in the lobby between games</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">gl_time&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="gl_time" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_39" >
+        <property name="toolTip" >
+         <string>Sets the ban time. A time of 0 is permanent</string>
+        </property>
+        <property name="text" >
+         <string>ban_timeOut</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="CCustomSpinboxWidget" name="ban_timeout" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_31" >
+        <property name="toolTip" >
+         <string>Time to wait before kicking a player for being idle for too long (in seconds)</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">g_idleKickTime&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_idlekicktime" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_25" >
+        <property name="toolTip" >
+         <string>Timer before the match starts (triggered once there are enough players on the server)</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">g_gameRules_startTimerLength&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_gameRules_startTimerLength" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QLabel" name="label_2" >
+        <property name="toolTip" >
+         <string>Set the maximum duration of the match</string>
+        </property>
+        <property name="text" >
+         <string>g_timelimit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_timelimit" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" >
+       <widget class="QLabel" name="label_4" >
+        <property name="toolTip" >
+         <string>Set the delay before respawning after each death</string>
+        </property>
+        <property name="text" >
+         <string>g_autoReviveTime</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_autoReviveTime" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="2" >
+    <widget class="QGroupBox" name="groupBox_9" >
+     <property name="title" >
+      <string>Reserved slot system</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_9" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_33" >
+        <property name="toolTip" >
+         <string>Turns on/off the reserved slot system</string>
+        </property>
+        <property name="text" >
+         <string>net_reserved_slot_system</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="net_reserved_slot_system" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="2" >
+    <widget class="QGroupBox" name="groupBox_7" >
+     <property name="title" >
+      <string>HUD</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_9" >
+        <property name="toolTip" >
+         <string>Set how enemies are shown on the radar</string>
+        </property>
+        <property name="text" >
+         <string>hud_radarTypeMP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="hud_radarTypeMP" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>2.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_14" >
+        <property name="toolTip" >
+         <string>Enabled dogtags in the game</string>
+        </property>
+        <property name="text" >
+         <string>hud_dogtagsEnable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="hud_dogtagsEnable" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item rowspan="2" row="5" column="0" >
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>Vote system</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_34" >
+        <property name="toolTip" >
+         <string>Controls how soon the same player can initiate another vote</string>
+        </property>
+        <property name="text" >
+         <string>sv_votingCooldown</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="sv_votingcooldown" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>9999999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_35" >
+        <property name="toolTip" >
+         <string>The fraction of players that have to vote 'yes' in order for someone to be kicked</string>
+        </property>
+        <property name="text" >
+         <string>sv_votingRatio</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="sv_votingratio" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>1</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_36" >
+        <property name="toolTip" >
+         <string>Controls how long until the vote ends and the results acted upon</string>
+        </property>
+        <property name="text" >
+         <string>sv_votingTimeOut</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="CCustomSpinboxWidget" name="sv_votingtimeout" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>9999999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_37" >
+        <property name="toolTip" >
+         <string>Control whether kick voting is enabled on this server</string>
+        </property>
+        <property name="text" >
+         <string>sv_votingEnable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="CCustomSpinboxWidget" name="sv_votingenable" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_38" >
+        <property name="toolTip" >
+         <string>Time in minutes for which the user is kickbanned when kicked of the server by a vote</string>
+        </property>
+        <property name="text" >
+         <string>sv_votingBanTime</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="CCustomSpinboxWidget" name="sv_votingbantime" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>1</number>
+        </property>
+        <property name="minimum" >
+         <double>0.100000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>999999.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item rowspan="3" row="5" column="2" >
+    <widget class="QGroupBox" name="groupBox_6" >
+     <property name="title" >
+      <string>Ping</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_11" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_27" >
+        <property name="toolTip" >
+         <string>Max ping a player can have before being kicked (0=disabled)</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">g_pingLimit&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_pinglimit" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_28" >
+        <property name="toolTip" >
+         <string>Time after which players can be kicked if they are over the specified ping limit</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">g_pingLimitTimer&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_pinglimittimer" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2" >
+       <spacer name="verticalSpacer" >
+        <property name="orientation" >
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0" >
+         <size>
+          <width>268</width>
+          <height>294</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="6" column="1" >
+    <widget class="QGroupBox" name="groupBox_2" >
+     <property name="title" >
+      <string>Team kills</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_29" >
+        <property name="toolTip" >
+         <string>Turns on/off punishment for team kills</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">g_tk_punish&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_tk_punish" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_30" >
+        <property name="toolTip" >
+         <string>Number of team kills user will be banned for</string>
+        </property>
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">g_tk_punish_limit&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_tk_punish_limit" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="0" >
+    <widget class="QGroupBox" name="groupBox_11" >
+     <property name="title" >
+      <string>Game Log</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_46" >
+        <property name="toolTip" >
+         <string>0 = off (default), 1 = current time, 2 = relative time, 3 = current + relative time, 4 = absolute time in seconds since this mode was started </string>
+        </property>
+        <property name="text" >
+         <string>log_IncludeTime</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="log_IncludeTime" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>0.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>4.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_47" >
+        <property name="toolTip" >
+         <string>When not 0, writes tick log entry into the log file, every N seconds</string>
+        </property>
+        <property name="text" >
+         <string>log_tick</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="log_tick" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_48" >
+        <property name="toolTip" >
+         <string>Defines the verbosity level for log messages written to console. -1 = suppress all logs (including eAlways), 0 = suppress all logs (except eAlways), 1 = additional errors, 2 = additional warnings, 3 = additional messages, 4 = additional comments</string>
+        </property>
+        <property name="text" >
+         <string>log_Verbosity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="CCustomSpinboxWidget" name="log_Verbosity" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>-1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>4.000000000000000</double>
+        </property>
+        <property name="value" >
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_49" >
+        <property name="toolTip" >
+         <string>Toggle whether to write log to file (game.log)</string>
+        </property>
+        <property name="text" >
+         <string>log_WriteToFile</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="CCustomSpinboxWidget" name="log_WriteToFile" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="value" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_50" >
+        <property name="toolTip" >
+         <string>Defines the verbosity level for log messages written to files. -1 = suppress all logs (including eAlways), 0 = suppress all logs (except eAlways), 1 = additional errors, 2 = additional warnings, 3 = additional messages, 4 = additional comments</string>
+        </property>
+        <property name="text" >
+         <string>log_WriteToFileVerbosity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="CCustomSpinboxWidget" name="log_WriteToFileVerbosity" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>-1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>4.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="1" >
+    <widget class="QGroupBox" name="groupBox_10" >
+     <property name="title" >
+      <string>Data Patches</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_40" >
+        <property name="toolTip" >
+         <string>Close the server down if a new data patch is found on the web server</string>
+        </property>
+        <property name="text" >
+         <string>g_quitOnNewDataFound</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_quitOnNewDataFound" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="maximum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="value" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_41" >
+        <property name="toolTip" >
+         <string>Number of rounds to wait before closing the server down when a new data patch is available (only applicable if g_quitOnNewDataFound = 1)</string>
+        </property>
+        <property name="text" >
+         <string>g_quitNumRoundsWarning</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_quitNumRoundsWarning" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>0.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="value" >
+         <double>3.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_42" >
+        <property name="toolTip" >
+         <string>Number of times downloading of data patch can fail before restarting the server (only applicable if g_quitOnNewDataFound = 1)</string>
+        </property>
+        <property name="text" >
+         <string>g_allowedDataPatchFailCount</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_allowedDataPatchFailCount" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>0</number>
+        </property>
+        <property name="minimum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="value" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_43" >
+        <property name="toolTip" >
+         <string>Frequency (in seconds) at which messages are sent out to clients warning them of server shutdown (only applicable if g_quitOnNewDataFound = 1)</string>
+        </property>
+        <property name="text" >
+         <string>g_shutdownMessageRepeatTime</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_shutdownMessageRepeatTime" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>1</number>
+        </property>
+        <property name="minimum" >
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value" >
+         <double>60.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_45" >
+        <property name="toolTip" >
+         <string>How many hours to wait before refreshing data from web server (This applies to both the AntiCheatConfig and the DataPatch)</string>
+        </property>
+        <property name="text" >
+         <string>g_dataRefreshFrequency</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="CCustomSpinboxWidget" name="g_dataRefreshFrequency" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="decimals" >
+         <number>1</number>
+        </property>
+        <property name="minimum" >
+         <double>0.100000000000000</double>
+        </property>
+        <property name="maximum" >
+         <double>999.000000000000000</double>
+        </property>
+        <property name="singleStep" >
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value" >
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CCustomSpinboxWidget</class>
+   <extends>QDoubleSpinBox</extends>
+   <header location="global" >interface/customSpinbox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

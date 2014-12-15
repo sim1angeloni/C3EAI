@@ -1,0 +1,179 @@
+<ui version="4.0" >
+ <class>widget_server</class>
+ <widget class="QWidget" name="widget_server" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1064</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Widget_server</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" >
+   <item row="0" column="0" >
+    <layout class="QGridLayout" name="gridLayout" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <item row="0" column="0" >
+      <widget class="QPushButton" name="variables_bt" >
+       <property name="minimumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>Variables</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="6" row="0" column="1" >
+      <widget class="QScrollArea" name="widget_area" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize" >
+        <size>
+         <width>923</width>
+         <height>405</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="lineWidth" >
+        <number>1</number>
+       </property>
+       <property name="widgetResizable" >
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents" >
+        <property name="geometry" >
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>919</width>
+          <height>401</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QPushButton" name="changemap_bt" >
+       <property name="minimumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>Change map</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" >
+      <widget class="QPushButton" name="players_bt" >
+       <property name="minimumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>Players</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" >
+      <widget class="QPushButton" name="other_bt" >
+       <property name="minimumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>Other</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" >
+      <spacer name="verticalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>121</width>
+         <height>198</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="0" >
+      <widget class="QPushButton" name="disconnect_bt" >
+       <property name="minimumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>Disconnect</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="../resources/resources.qrc" >
+         <normaloff>:/back.png</normaloff>:/back.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources/resources.qrc" />
+ </resources>
+ <connections/>
+</ui>

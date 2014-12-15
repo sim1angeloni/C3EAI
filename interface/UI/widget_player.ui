@@ -1,0 +1,350 @@
+<ui version="4.0" >
+ <class>widget_player</class>
+ <widget class="QWidget" name="widget_player" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>923</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Widget_player</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3" >
+   <item row="0" column="0" colspan="2" >
+    <widget class="QLabel" name="label" >
+     <property name="maximumSize" >
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Players list</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="2" row="0" column="2" >
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>28</width>
+       <height>132</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="3" colspan="2" >
+    <widget class="QLabel" name="label_2" >
+     <property name="maximumSize" >
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Bans list</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" colspan="2" >
+    <widget class="QLabel" name="label_3" >
+     <property name="maximumSize" >
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Reserved slots list</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="5" row="1" column="0" colspan="2" >
+    <widget class="QTableView" name="playerList" />
+   </item>
+   <item rowspan="5" row="1" column="3" colspan="2" >
+    <widget class="QTableView" name="banList" />
+   </item>
+   <item rowspan="5" row="1" column="5" colspan="2" >
+    <widget class="QTableView" name="reservedSlotList" />
+   </item>
+   <item row="2" column="2" >
+    <widget class="QPushButton" name="assignReservedSlot_bt" >
+     <property name="maximumSize" >
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip" >
+      <string>Add to Reserved slots</string>
+     </property>
+     <property name="text" >
+      <string>> R</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2" >
+    <widget class="QPushButton" name="assignBan_bt" >
+     <property name="maximumSize" >
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip" >
+      <string>Add to ban list</string>
+     </property>
+     <property name="text" >
+      <string>> B</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2" >
+    <widget class="QPushButton" name="kickPlayer_bt" >
+     <property name="maximumSize" >
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip" >
+      <string>Kick player</string>
+     </property>
+     <property name="text" >
+      <string>> K</string>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="4" row="5" column="2" >
+    <spacer name="verticalSpacer_2" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>28</width>
+       <height>272</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="0" >
+    <widget class="QPushButton" name="refreshPlayer_bt" >
+     <property name="minimumSize" >
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Refresh</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" >
+    <spacer name="horizontalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>182</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="3" >
+    <widget class="QPushButton" name="refreshBan_bt" >
+     <property name="minimumSize" >
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Refresh</string>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="2" row="6" column="4" >
+    <spacer name="horizontalSpacer_2" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>164</width>
+       <height>48</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="5" >
+    <widget class="QPushButton" name="refreshReservedSlot_bt" >
+     <property name="minimumSize" >
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Refresh</string>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="2" row="6" column="6" >
+    <spacer name="horizontalSpacer_3" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>164</width>
+       <height>48</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item rowspan="2" row="7" column="0" colspan="2" >
+    <spacer name="verticalSpacer_3" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>288</width>
+       <height>131</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="7" column="3" >
+    <widget class="QPushButton" name="removeBan_bt" >
+     <property name="minimumSize" >
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Unban</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5" >
+    <widget class="QPushButton" name="removeReservedSlot_bt" >
+     <property name="minimumSize" >
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Remove</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3" colspan="2" >
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>Manual ban</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_14" >
+        <property name="minimumSize" >
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Player name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="argBan" />
+      </item>
+      <item row="1" column="1" >
+       <widget class="QPushButton" name="addBan_bt" >
+        <property name="minimumSize" >
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Ban</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="8" column="5" colspan="2" >
+    <widget class="QGroupBox" name="groupBox_2" >
+     <property name="title" >
+      <string>Manual slot</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_15" >
+        <property name="minimumSize" >
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Player name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="argReservedSlot" />
+      </item>
+      <item row="1" column="1" >
+       <widget class="QPushButton" name="addReservedSlot_bt" >
+        <property name="minimumSize" >
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
